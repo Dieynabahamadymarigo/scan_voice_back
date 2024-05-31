@@ -1,0 +1,64 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter une Imprimante</title>
+</head>
+
+<body>
+  <h1>Ajouter une Imprimante</h1>
+  <form action="/addscanner/scanner" method="POST">
+    <div>
+      <label for="type">Type d'Imprimante :</label>
+      <select id="type" name="type" required>
+        <option value="EPSON">EPSON</option>
+        <option value="STAR">STAR</option>
+        <option value="HP">HP</option>
+        <!-- Ajoutez d'autres types d'imprimantes si nécessaire -->
+      </select>
+    </div>
+    <div>
+      <label for="interface">Interface :</label>
+      <select id="interface" name="interface" required>
+        <option value="usb">USB</option>
+        <option value="network">Network</option>
+        <option value="bluetooth">Bluetooth</option>
+        <!-- Ajoutez d'autres types d'interfaces si nécessaire -->
+      </select>
+    </div>
+    <button type="submit">Ajouter Imprimante</button>
+  </form>
+</body>
+
+</html> --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter une Imprimante</title>
+</head>
+
+<body>
+  <h1>Ajouter une Imprimante</h1>
+  <form action="/addscanner/scanner" method="POST">
+    <div>
+      <label for="type">Type d'Imprimante :</label>
+      <select name="type" id="type">
+        <option value="EPSON">EPSON</option>
+        <option value="STAR">STAR</option>
+        <!-- Ajoutez d'autres types d'imprimantes si nécessaire -->
+      </select>
+    </div>
+    <div>
+      <label for="interface">Interface :</label>
+      <input type="text" name="interface" id="interface" placeholder="usb, tcp://xxx.xxx.xxx.xxx, printer">
+    </div>
+    <button type="submit">Ajouter</button>
+  </form>
+</body>
+
+</html>
